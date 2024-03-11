@@ -1,0 +1,20 @@
+<section>
+  <div class="container">
+    <div class="row" style="background-color: aqua;">
+      <div class="col-md-12">
+        <h4>Angular State in Child Component</h4>
+        <span></span>you can see the state change in the parent has affected this child component</span>
+      </div>
+
+      <div class="col-md-6">
+        <ul class="list-group">
+          <li class="list-group-item" *ngFor="let course of courseItems$ |  async">
+            <span>Course: {{course.name}}</span><br />
+            <span>Dept:<b>{{course.department}}</b></span>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
